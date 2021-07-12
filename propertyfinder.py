@@ -120,6 +120,7 @@ def insert_data(records):
         print("Successfully Connected to SQLite")
 
         cursor.executemany("insert into Listings(category, url) values (?,?)", records)
+        sqliteConnection.commit()
         print("Records Have Been Inserted")
         cursor.close()
 
