@@ -159,5 +159,7 @@ def main():
 
     create_table()
     insert_data(records)
-    
+
+print("________starting crawling___________")
 main()
+print("________crawling completed___________")
